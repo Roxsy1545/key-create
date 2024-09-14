@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelişmiş Şifre Oluşturucu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Gelişmiş Şifre Oluşturucu</h1>
+        <form id="password-form">
+            <label for="length" id="length-label">Şifre Uzunluğu:</label>
+            <input type="number" id="length" name="length" min="8" max="128" value="16">
+            
+            <label>
+                <input type="checkbox" id="include-uppercase" checked>
+                <span id="uppercase-label">Büyük Harfler</span>
+            </label>
+            
+            <label>
+                <input type="checkbox" id="include-lowercase" checked>
+                <span id="lowercase-label">Küçük Harfler</span>
+            </label>
+            
+            <label>
+                <input type="checkbox" id="include-numbers" checked>
+                <span id="numbers-label">Rakamlar</span>
+            </label>
+            
+            <label>
+                <input type="checkbox" id="include-special" checked>
+                <span id="special-label">Özel Karakterler</span>
+            </label>
+            
+            <button type="button" id="generate">Şifre Oluştur</button>
+        </form>
+        <div class="result">
+            <p id="password">Şifre burada görünecek</p>
+            <button id="copy">Kopyala</button>
+        </div>
+        <div class="settings">
+            <label for="language">Dil:</label>
+            <select id="language">
+                <option value="tr">Türkçe</option>
+                <option value="en">English</option>
+            </select>
+            
+            <label for="theme">Tema:</label>
+            <select id="theme">
+                <option value="light">Aydınlık</option>
+                <option value="dark">Karanlık</option>
+            </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+              </html>
