@@ -1,3 +1,4 @@
+/* Genel Ayarlar */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,65 +6,81 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f0f4f8;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Başlık */
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
+    color: #333;
+    text-align: center;
 }
 
+/* Form ve Etiketler */
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 label {
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
 }
 
-input[type="number"] {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
+input[type="number"], select {
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Butonlar */
+button {
+    padding: 12px;
     background-color: #007bff;
-    color: #fff;
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Sonuç Alanı */
 .result {
     margin-top: 20px;
     text-align: center;
 }
 
 #password {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
     word-break: break-word;
+    color: #444;
 }
 
+/* Kopyala Butonu */
 #copy {
     background-color: #28a745;
 }
@@ -72,14 +89,22 @@ button:hover {
     background-color: #218838;
 }
 
+/* Ayarlar Bölümü */
 .settings {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.settings label, .settings select {
-    margin-bottom: 10px;
+.settings label {
+    font-size: 16px;
+}
+
+.settings select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 /* Karanlık Mod */
@@ -90,22 +115,22 @@ body.dark-mode {
 
 .container.dark-mode {
     background: #1e1e1e;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 button.dark-mode {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #1a73e8;
+    color: #ffffff;
 }
 
 button.dark-mode:hover {
-    background-color: #0056b3;
+    background-color: #155ab8;
 }
 
 #copy.dark-mode {
-    background-color: #28a745;
+    background-color: #34c759;
 }
 
 #copy.dark-mode:hover {
-    background-color: #218838;
+    background-color: #2a9d8f;
 }
